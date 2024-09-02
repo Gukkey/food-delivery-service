@@ -1,0 +1,18 @@
+meta {
+  name: Login customer
+  type: http
+  seq: 12
+}
+
+post {
+  url: http://localhost:8080/api/customer/login
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "email": "kingston@gmail.com",
+    "password": "kingston@123"
+  }
+}

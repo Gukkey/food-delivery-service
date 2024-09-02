@@ -1,0 +1,21 @@
+meta {
+  name: Create Customer
+  type: http
+  seq: 6
+}
+
+post {
+  url: http://localhost:8080/api/customer
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Kingston",
+    "gender": "male",
+    "address": "No de 3, Boat Club road, Chennai",
+    "email": "kingston@gmail.com",
+    "password": "kingston@123"
+  }
+}

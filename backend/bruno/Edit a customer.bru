@@ -1,0 +1,21 @@
+meta {
+  name: Edit a customer
+  type: http
+  seq: 13
+}
+
+put {
+  url: http://localhost:8080/api/customer/10
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNzI1MjExNTI5LCJleHAiOjE3MjUyMTUxMjl9.n2tBh0Rd58ZwbYJL7LGgHlEHGzYenP1kP_9D9aCABw0
+}
+
+body:json {
+  {
+    "name": "Kingston coke king"
+  }
+}

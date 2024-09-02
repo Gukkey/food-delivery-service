@@ -1,0 +1,15 @@
+meta {
+  name: Remove customer
+  type: http
+  seq: 9
+}
+
+delete {
+  url: http://localhost:8080/api/customer/
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiaWF0IjoxNzI1MjA4MzMwLCJleHAiOjE3MjUyMTE5MzB9.mnlB0nPE-w293qUPniQiSNiY2kgzY2razBj24KAeKMA
+}

@@ -1,0 +1,21 @@
+meta {
+  name: Register a menu
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8080/api/restaurant/menu
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "Chicken rice",
+    "description": "Tasty chicken rice on your command",
+    "price": 70,
+    "dietary_tags": "Non-veg",
+    "restaurant_id": 4
+  }
+}
